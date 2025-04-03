@@ -1,103 +1,178 @@
-import Image from "next/image";
+import { Navigation } from "@/components/navigation"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <Navigation />
+      
+      <main className="pt-16">
+        {/* Services Section */}
+        <section id="services" className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-semibold mb-12">Our Services</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold">Business Valuation</h3>
+                <p className="text-gray-600">
+                  Comprehensive analysis of your business's worth for sales, mergers,
+                  acquisitions, or strategic planning.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold">Risk & Insurance</h3>
+                <p className="text-gray-600">
+                  Expert assessment of business risks and insurance needs to protect
+                  your assets and operations.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold">Sustainability & Audit</h3>
+                <p className="text-gray-600">
+                  Comprehensive sustainability consulting and financial audit services
+                  to ensure compliance and growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        {/* Team Section */}
+        <section id="team" className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-semibold mb-12">Our Team</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold">Patrick Millar</h3>
+                <p className="text-gray-600 font-medium">Founder & Managing Partner</p>
+                <p className="text-gray-600">
+                  With 40 years of experience in business valuation, risk and insurance,
+                  Patrick leads our strategic direction and client relationships.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold">Michael Millar, CPA</h3>
+                <p className="text-gray-600 font-medium">Co-Founder & Sustainability Director</p>
+                <p className="text-gray-600">
+                  As a Certified Public Accountant, Michael specializes in sustainability
+                  consulting and audit services.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold">Nicholas Millar, CPA</h3>
+                <p className="text-gray-600 font-medium">Co-Founder & Financial Director</p>
+                <p className="text-gray-600">
+                  Nicholas specializes in audit and Financial Planning & Analysis (FP&A),
+                  ensuring comprehensive financial insights.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section id="about" className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-semibold mb-12">About Us</h2>
+            <div className="max-w-3xl">
+              <p className="text-gray-600 mb-6">
+                Founded by Patrick, Michael, and Nicholas Millar, Cardinal North Valuation
+                brings decades of combined experience to every client engagement. Our team
+                of certified valuation experts is committed to delivering accurate,
+                defensible valuations that stand up to scrutiny.
+              </p>
+              <p className="text-gray-600">
+                We understand that each business is unique, which is why we take a
+                personalized approach to every valuation project. Our methodologies are
+                rigorous, our analysis is thorough, and our reports are clear and
+                comprehensive.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-semibold mb-12">Contact Us</h2>
+            <div className="grid md:grid-cols-2 gap-12">
+              <div>
+                <form className="space-y-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-500 focus:ring-gray-500"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-500 focus:ring-gray-500"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      rows={4}
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-500 focus:ring-gray-500"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+              
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Location</h3>
+                  <p className="text-gray-600">
+                    123 Business Avenue, Suite 400<br />
+                    Thousand Oaks, CA 91360
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Contact</h3>
+                  <p className="text-gray-600">
+                    Phone: (805) 555-7890<br />
+                    Email: info@cardinalnorthvaluation.com
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Hours</h3>
+                  <p className="text-gray-600">
+                    Monday - Friday: 9:00 AM - 5:00 PM<br />
+                    Saturday - Sunday: Closed
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="py-8 bg-gray-900 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <p>© {new Date().getFullYear()} Cardinal North Valuation Partners. All rights reserved.</p>
+        </div>
       </footer>
-    </div>
-  );
+    </>
+  )
 }
