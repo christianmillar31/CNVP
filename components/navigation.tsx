@@ -6,7 +6,7 @@ export function Navigation() {
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl font-semibold">Cardinal North</span>
+            <span className="text-xl font-semibold">Cardinal North Valuation</span>
           </Link>
           
           <div className="hidden md:flex gap-8">

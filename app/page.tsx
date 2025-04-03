@@ -44,28 +44,28 @@ export default function Home() {
             <h2 className="text-3xl font-semibold mb-12">Our Team</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold">Patrick Millar</h3>
-                <p className="text-gray-600 font-medium">Founder & Managing Partner</p>
+                <h3 className="text-xl font-semibold">Managing Partner</h3>
+                <p className="text-gray-600 font-medium">Founder & Lead Strategist</p>
                 <p className="text-gray-600">
-                  With 40 years of experience in business valuation, risk and insurance,
-                  Patrick leads our strategic direction and client relationships.
+                  With over 40 years of experience in business valuation, risk and insurance,
+                  our managing partner leads our strategic direction and client relationships.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold">Michael Millar, CPA</h3>
-                <p className="text-gray-600 font-medium">Co-Founder & Sustainability Director</p>
+                <h3 className="text-xl font-semibold">Sustainability Director</h3>
+                <p className="text-gray-600 font-medium">Co-Founder & CPA</p>
                 <p className="text-gray-600">
-                  As a Certified Public Accountant, Michael specializes in sustainability
-                  consulting and audit services.
+                  As a Certified Public Accountant, our sustainability director specializes in 
+                  sustainability consulting and audit services.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold">Nicholas Millar, CPA</h3>
-                <p className="text-gray-600 font-medium">Co-Founder & Financial Director</p>
+                <h3 className="text-xl font-semibold">Financial Director</h3>
+                <p className="text-gray-600 font-medium">Co-Founder & CPA</p>
                 <p className="text-gray-600">
-                  Nicholas specializes in audit and Financial Planning & Analysis (FP&A),
+                  Our financial director specializes in audit and Financial Planning & Analysis (FP&A),
                   ensuring comprehensive financial insights.
                 </p>
               </div>
@@ -79,10 +79,9 @@ export default function Home() {
             <h2 className="text-3xl font-semibold mb-12">About Us</h2>
             <div className="max-w-3xl">
               <p className="text-gray-600 mb-6">
-                Founded by Patrick, Michael, and Nicholas Millar, Cardinal North Valuation
-                brings decades of combined experience to every client engagement. Our team
-                of certified valuation experts is committed to delivering accurate,
-                defensible valuations that stand up to scrutiny.
+                Cardinal North Valuation brings decades of combined experience to every client 
+                engagement. Our team of certified valuation experts is committed to delivering 
+                accurate, defensible valuations that stand up to scrutiny.
               </p>
               <p className="text-gray-600">
                 We understand that each business is unique, which is why we take a
@@ -144,7 +143,6 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Location</h3>
                   <p className="text-gray-600">
-                    123 Business Avenue, Suite 400<br />
                     Thousand Oaks, CA 91360
                   </p>
                 </div>
@@ -170,7 +168,7 @@ export default function Home() {
 
       <footer className="py-8 bg-gray-900 text-white">
         <div className="container mx-auto px-4 text-center">
-          <p>© {new Date().getFullYear()} Cardinal North Valuation Partners. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Cardinal North Valuation. All rights reserved.</p>
         </div>
       </footer>
     </>
