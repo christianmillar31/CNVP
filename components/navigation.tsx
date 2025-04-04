@@ -22,12 +22,12 @@ export function Navigation() {
         <nav className="flex items-center justify-between">
           <Link href="/" className="flex flex-col group">
             <span className={`text-2xl font-bold tracking-tight transition-colors ${
-              isScrolled ? "text-gray-900" : "text-white"
+              isScrolled ? "text-gray-900" : "text-gray-900"
             }`}>
               Cardinal North
             </span>
             <span className={`text-sm font-medium transition-colors ${
-              isScrolled ? "text-red-600" : "text-red-400"
+              isScrolled ? "text-red-600" : "text-red-600"
             }`}>
               Valuation Partners
             </span>
@@ -37,7 +37,7 @@ export function Navigation() {
             <Link 
               href="#services" 
               className={`hover:text-red-600 transition-colors ${
-                isScrolled ? "text-gray-600" : "text-white"
+                isScrolled ? "text-gray-600" : "text-gray-700"
               }`}
             >
               Services
@@ -45,7 +45,7 @@ export function Navigation() {
             <Link 
               href="#team" 
               className={`hover:text-red-600 transition-colors ${
-                isScrolled ? "text-gray-600" : "text-white"
+                isScrolled ? "text-gray-600" : "text-gray-700"
               }`}
             >
               Team
@@ -53,7 +53,7 @@ export function Navigation() {
             <Link 
               href="#about" 
               className={`hover:text-red-600 transition-colors ${
-                isScrolled ? "text-gray-600" : "text-white"
+                isScrolled ? "text-gray-600" : "text-gray-700"
               }`}
             >
               About
@@ -61,7 +61,7 @@ export function Navigation() {
             <Link 
               href="#contact" 
               className={`hover:text-red-600 transition-colors ${
-                isScrolled ? "text-gray-600" : "text-white"
+                isScrolled ? "text-gray-600" : "text-gray-700"
               }`}
             >
               Contact
