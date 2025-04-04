@@ -168,11 +168,11 @@ export default function Home() {
                 <div className="w-20 h-20 bg-red-600 rounded-full mb-6 mx-auto flex items-center justify-center text-white text-2xl font-bold">
                   SD
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-center">Sustainability Director</h3>
+                <h3 className="text-xl font-semibold mb-2 text-center">Due Diligence Director</h3>
                 <p className="text-red-600 font-medium text-center mb-4">Co-Founder & CPA</p>
                 <p className="text-gray-600 text-center">
-                  As a Certified Public Accountant, our sustainability director specializes in 
-                  sustainability consulting and audit services.
+                  As a Certified Public Accountant, our due diligence director specializes in 
+                  financial due diligence, risk assessment, and comprehensive transaction analysis.
                 </p>
               </div>
 
