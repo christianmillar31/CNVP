@@ -229,7 +229,7 @@ export default function Home() {
               <div className="bg-white p-8 rounded-2xl shadow-lg">
                 <form 
                   name="contact" 
-                  netlify
+                  data-netlify="true"
                   action="/success"
                   method="POST"
                   className="space-y-6"
