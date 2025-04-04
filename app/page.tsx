@@ -287,8 +287,7 @@ export default function Home() {
                     Contact
                   </h3>
                   <p className="text-gray-600 ml-8">
-                    Phone: (805) 555-7890<br />
-                    Email: info@cardinalnorthvaluation.com
+                    Email: info@cardinalvaluation.com
                   </p>
                 </div>
                 <div>
