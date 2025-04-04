@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code", // You'll need to add this later
+    google: 'PASTE_YOUR_VERIFICATION_CODE_HERE', // Replace this with the code Google provides
   }
 };
 
@@ -62,6 +62,26 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="canonical" href="https://cardinalnorth.com" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              "name": "Cardinal North",
+              "description": "Expert investment banking advisory services, specializing in financial due diligence and transaction analysis.",
+              "url": "https://cardinalnorth.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "US"
+              },
+              "sameAs": [],
+              "openingHours": "Mo,Tu,We,Th,Fr 09:00-17:00",
+              "priceRange": "$$$",
+              "serviceType": ["Investment Banking Advisory", "Financial Due Diligence", "Risk Assessment"],
+            })
+          }}
+        />
       </head>
       <body className={inter.className}>
         {children}

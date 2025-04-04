@@ -25,7 +25,11 @@ export default function Home() {
       
       <main>
         {/* Hero Section */}
-        <section ref={heroRef} className="relative h-screen flex items-center justify-center bg-[#f1ebdb] text-gray-900 overflow-hidden">
+        <section 
+          ref={heroRef} 
+          className="relative h-screen flex items-center justify-center bg-[#f1ebdb] text-gray-900 overflow-hidden"
+          aria-label="Welcome to Cardinal North"
+        >
           <motion.div 
             style={{ y }}
             className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-5"
@@ -91,7 +95,11 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="py-20 bg-white relative overflow-hidden">
+        <section 
+          id="services" 
+          className="py-20 bg-white relative overflow-hidden"
+          aria-label="Our Services"
+        >
           <div className="absolute inset-0 bg-[url('/images/dots.svg')] opacity-5"></div>
           <div className="container mx-auto px-4 relative">
             <h2 className="text-4xl font-bold mb-16 text-center">
@@ -143,7 +151,11 @@ export default function Home() {
         </section>
 
         {/* Team Section */}
-        <section id="team" className="py-20 bg-gray-50 relative">
+        <section 
+          id="team" 
+          className="py-20 bg-gray-50 relative"
+          aria-label="Our Team Members"
+        >
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-100/50 to-transparent"></div>
           <div className="container mx-auto px-4 relative">
             <h2 className="text-4xl font-bold mb-16 text-center">
@@ -192,7 +204,11 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-20 bg-white relative">
+        <section 
+          id="about" 
+          className="py-20 bg-white relative"
+          aria-label="About Cardinal North"
+        >
           <div className="absolute inset-0 bg-[url('/images/dots.svg')] opacity-5"></div>
           <div className="container mx-auto px-4 relative">
             <h2 className="text-4xl font-bold mb-16 text-center">
@@ -217,7 +233,11 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-20 bg-gray-50 relative">
+        <section 
+          id="contact" 
+          className="py-20 bg-gray-50 relative"
+          aria-label="Contact Us"
+        >
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-100/50 to-transparent"></div>
           <div className="container mx-auto px-4 relative">
             <h2 className="text-4xl font-bold mb-16 text-center">
