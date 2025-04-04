@@ -60,7 +60,7 @@ export default function Home() {
             </motion.div>
             
             <motion.p 
-              className={`${playfair.className} text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed tracking-wide`}
+              className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed tracking-wide"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
