@@ -19,7 +19,7 @@ export default function Success() {
         </div>
         <h2 className="text-2xl font-bold mb-4 text-gray-900">Message Sent!</h2>
         <p className="text-gray-600 mb-8">
-          Thank you for contacting Cardinal Valuation. We'll get back to you as soon as possible.
+          Thank you for contacting Cardinal North. We'll get back to you as soon as possible.
         </p>
         <Link 
           href="/"
