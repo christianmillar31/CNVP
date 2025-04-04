@@ -43,7 +43,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <motion.div 
-              className="flex justify-center mb-12"
+              className="flex justify-center mb-8"
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -60,7 +60,7 @@ export default function Home() {
             </motion.div>
             
             <motion.p 
-              className="text-lg md:text-xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed tracking-wide"
+              className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed tracking-wide"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -131,10 +131,10 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Sustainability & Audit</h3>
+                <h3 className="text-xl font-semibold mb-4">Due Diligence</h3>
                 <p className="text-gray-600">
-                  Comprehensive sustainability consulting and financial audit services
-                  to ensure compliance and growth.
+                  Thorough investigation and analysis of business operations, financials, and risks
+                  to support informed investment and acquisition decisions.
                 </p>
               </div>
             </div>
