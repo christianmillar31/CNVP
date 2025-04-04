@@ -1,0 +1,9 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Prevent crawling of success page
+Disallow: /success
+
+# Sitemap location
+Sitemap: https://cardinalnorth.com/sitemap.xml 
