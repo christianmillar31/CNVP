@@ -227,7 +227,19 @@ export default function Home() {
             </h2>
             <div className="grid md:grid-cols-2 gap-12">
               <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <form className="space-y-6">
+                <form 
+                  name="contact" 
+                  method="POST" 
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  className="space-y-6"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p className="hidden">
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field" />
+                    </label>
+                  </p>
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                       Name
@@ -235,6 +247,8 @@ export default function Home() {
                     <input
                       type="text"
                       id="name"
+                      name="name"
+                      required
                       className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500"
                     />
                   </div>
@@ -245,6 +259,8 @@ export default function Home() {
                     <input
                       type="email"
                       id="email"
+                      name="email"
+                      required
                       className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500"
                     />
                   </div>
@@ -254,7 +270,9 @@ export default function Home() {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
                       rows={4}
+                      required
                       className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500"
                     />
                   </div>
