@@ -24,12 +24,12 @@ export default function Home() {
       
       <main>
         {/* Hero Section */}
-        <section ref={heroRef} className="relative h-screen flex items-center justify-center bg-[#F5F2EB] text-gray-900 overflow-hidden">
+        <section ref={heroRef} className="relative h-screen flex items-center justify-center bg-[#f1ebdb] text-gray-900 overflow-hidden">
           <motion.div 
             style={{ y }}
             className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-5"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#F5F2EB]/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#f1ebdb]/50 to-transparent" />
           
           {/* Grain texture overlay */}
           <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
@@ -85,7 +85,7 @@ export default function Home() {
             className="absolute bottom-0 left-0 right-0 h-32"
             style={{ opacity }}
           >
-            <div className="h-full bg-gradient-to-t from-white to-transparent" />
+            <div className="h-full bg-gradient-to-t from-[#f1ebdb] to-transparent" />
           </motion.div>
         </section>
 
