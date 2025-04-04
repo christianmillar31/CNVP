@@ -166,7 +166,7 @@ export default function Home() {
 
               <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
                 <div className="w-20 h-20 bg-red-600 rounded-full mb-6 mx-auto flex items-center justify-center text-white text-2xl font-bold">
-                  SD
+                  DD
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-center">Due Diligence Director</h3>
                 <p className="text-red-600 font-medium text-center mb-4">Co-Founder & CPA</p>
