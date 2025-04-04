@@ -1,3 +1,4 @@
+// Trigger Netlify rebuild
 "use client"
 
 import { Navigation } from "@/components/navigation"
