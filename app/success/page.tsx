@@ -2,6 +2,14 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  }
+}
 
 export default function Success() {
   return (
